@@ -5,11 +5,11 @@ USER root
 
 # Install required dependencies
 RUN dnf install --assumeyes \
-   platform-python-devel
+   python38-devel libffi-devel
 
 # Install jupyter
-RUN pip3 install jupyter-core==4.7.1 && \
-    pip3 install jupyterlab
+RUN pip3.8 install jupyter-core==4.7.1 packaging && \
+    pip3.8 install jupyterlab
 
 # Set back to coder user
 USER coder
