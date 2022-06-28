@@ -88,7 +88,7 @@ if [ $QUIET = true ]; then
 fi
 
 for image in "${IMAGES[@]}"; do
-  image_dir="$PROJECT_ROOT/images/$image"
+  image_dir="$PROJECT_ROOT/images_amd/$image"
   image_file="Dockerfile.$TAG"
   image_ref="codercom/enterprise-$image:$TAG"
   image_path="$image_dir/$image_file"

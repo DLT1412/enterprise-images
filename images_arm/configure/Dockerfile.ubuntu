@@ -1,0 +1,3 @@
+FROM idkidr/coder-base:ubuntu
+
+COPY [ "configure", "/coder/configure" ]
